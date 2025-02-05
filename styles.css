@@ -8,8 +8,19 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f9f9f9;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+/* Ensures the body fades in when the page loads */
+body.fade-in {
+    opacity: 1;
 }
 
+/* Page Fade-Out Effect */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 .container {
     width: 90%;
     margin: 0 auto;
@@ -21,17 +32,26 @@ header {
     background-color: #0c2340;
     padding: 15px 0;
     position: relative;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* Navbar Container */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Logo */
 .logo img {
     height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Logo Hover Effect */
+.logo img:hover {
+    transform: scale(1.1);
 }
 
 /* Navigation Menu */
@@ -46,23 +66,44 @@ nav ul {
     display: flex;
 }
 
+/* Navbar Items */
 nav ul li {
     margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
 }
 
+/* Hover Effect on Links */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Active link */
+/* Hover Effect on Links */
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Active Link */
 nav ul li a.active {
     color: #ff6600;
     font-weight: bold;
 }
 
-/* Hamburger Menu Button (Hidden by Default) */
+/* Hover Effect on Active Link */
+nav ul li a.active:hover {
+    color: #ffaa33;
+    transform: scale(1.1);
+}
+
+/* Navbar Hover Glow Effect */
+nav:hover {
+    filter: drop-shadow(0px 2px 10px rgba(255, 255, 255, 0.2));
+}
+
+/* Hamburger Menu Button */
 .hamburger {
     display: none;
     background: none;
@@ -70,6 +111,12 @@ nav ul li a.active {
     font-size: 24px;
     color: white;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hamburger Button Hover Effect */
+.hamburger:hover {
+    transform: rotate(90deg);
 }
 
 /* Mobile Navigation Styles */

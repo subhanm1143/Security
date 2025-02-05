@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Home Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="news.css"> <!-- Security Packages Styles -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imgs/logo.png" alt="Safe Home Security">
+            </div>
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Security.html">Security Packages</a></li>
+                    <li><a href="news.html"class="active">News</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- News Section -->
+<section class="news">
+    <div class="container">
+        <h1>STAY UP-TO-DATE WITH THE LATEST HOME TRENDS, PRODUCTS, AND INSIGHTS.</h1>
+
+        <div class="news-container">
+            <!-- News 1 -->
+            <div class="news-item">
+                <img src="imgs/news-1.jpg" alt="New York Grandmother Tricks Scammer">
+                <h2>NEW YORK GRANDMOTHER TRICKS WOULD-BE SCAMMER</h2>
+                <p>A Long Island, New York grandmother successfully tricked a scammer attempting to defraud her out of thousands of dollars. 
+                   Jean Ebbert, a 73-year-old former 911 dispatcher, received a suspicious call from a man claiming to be her grandson in jail, requesting 
+                   $8,000 for bail. Recognizing the scam, she played along, alerting authorities who later caught the suspect at her home. 
+                   Security experts say this serves as a reminder to always verify suspicious calls before taking action.</p>
+            </div>
+
+            <!-- News 2 -->
+            <div class="news-item">
+                <img src="imgs/news-2.jpg" alt="Top Security Tips for Your Home">
+                <h2>TOP SECURITY TIPS TO KEEP YOUR HOME SAFE</h2>
+                <p>Home security experts emphasize the importance of preventive measures to keep properties safe. Key tips include installing motion-activated lights, 
+                   reinforcing door locks, and using a monitored security system. Additionally, maintaining good relationships with neighbors and keeping a well-lit exterior 
+                   can deter potential intruders. Homeowners are advised to regularly test security systems and update passwords for smart home devices.
+                    You know what is going on it is all about having safety.</p>
+            </div>
+
+            <!-- News 3 -->
+            <div class="news-item">
+                <img src="imgs/news-3.jpg" alt="Attempted Break-In Foiled">
+                <h2>ATTEMPTED BREAK-IN FOILED BY HOME SECURITY CAMERAS</h2>
+                <p>A security camera system in Peachland, B.C., helped prevent a potential burglary when homeowners were alerted to an unknown individual lurking around their property. 
+                   The motion-activated cameras sent real-time notifications to their phones, allowing them to contact law enforcement before the intruder could gain entry. 
+                   Experts stress the importance of investing in a reliable security camera system with remote monitoring capabilities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="company-info">
+                    <img src="imgs/logo.png" alt="Safe Home Security">
+                    <p>As one of the nation’s largest residential home security providers, Safe Home Security has big company resources with the personable service of a small business.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Site Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Security.html">Security Packages</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>1125 Middle Street #201, Middletown, CT 06457</p>
+                    <p>Phone: 1-860-980-SAFE (7233)</p>
+                    <p>Email: info@safehomesecurityinc.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+        document.getElementById("hamburger").addEventListener("click", function() {
+            document.getElementById("nav-menu").classList.toggle("active");
+        });
+        </script>
+        <script>
+            // Ensure the page fades in when loaded
+            document.addEventListener("DOMContentLoaded", function () {
+                document.body.classList.add("fade-in");
+            });
+        
+            // Smooth transition when clicking links
+            document.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", function (event) {
+                    if (this.href.startsWith(window.location.origin) && !this.href.includes("#")) {
+                        event.preventDefault();
+                        const href = this.href;
+                        document.body.classList.add("fade-out");
+                        setTimeout(() => {
+                            window.location.href = href;
+                        }, 500); // Match the CSS transition duration
+                    }
+                });
+            });
+        </script>
+        
+</body>
+</html>
