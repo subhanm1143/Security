@@ -156,6 +156,11 @@ nav:hover {
         transform: translateX(0);
     }
 }
+@media screen and (max-width: 600px) {
+    .hero-logo {
+        display: none !important;
+    }
+}
 
 /* Updated Top Hero Section */
 .top-hero {

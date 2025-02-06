@@ -20,6 +20,7 @@
 
 .security-header img {
     width: 150px;
+    filter: invert(.5);
 }
 
 .security-header h1 {
