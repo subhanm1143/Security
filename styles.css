@@ -45,8 +45,9 @@ header .container {
 
 /* Logo */
 .logo img {
-    height: 50px;
+    height: 80px;
     transition: transform 0.3s ease-in-out;
+    filter: grayscale(100%);
 }
 
 /* Logo Hover Effect */
