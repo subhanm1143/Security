@@ -1,0 +1,168 @@
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.contact-hero {
+    background: url('imgs/background.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.contact-hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-hero p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contact-form .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    color: #0c2340;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: #cc5200;
+}
+/* Company Info Section */
+.company-infos {
+    padding: 60px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info-box {
+    width: 30%;
+    min-width: 280px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.info-box i {
+    font-size: 45px;
+    color: #ff6600;
+    margin-bottom: 12px;
+}
+
+.info-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Google Map Section */
+.contact-map {
+    padding: 50px 0;
+    background: white;
+}
+
+/* Animations */
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .company-infos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .info-box {
+        width: 80%;
+    }
+}

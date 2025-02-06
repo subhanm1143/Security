@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link rel="stylesheet" href="news.css"> <!-- Security Packages Styles -->
+    <link rel="stylesheet" href="contact.css"> <!-- Security Packages Styles -->
 </head>
 <body>
 
@@ -26,52 +26,88 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Security.html">Security Packages</a></li>
-                    <li><a href="news.html"class="active">News</a></li>
+                    <li><a href="news.html">News</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html"class="active">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-<!-- News Section -->
-<section class="news">
+    <!-- Hero Section -->
+<section class="contact-hero" data-aos="fade-down" data-aos-duration="1200">
     <div class="container">
-        <h1>STAY UP-TO-DATE WITH THE LATEST HOME TRENDS, PRODUCTS, AND INSIGHTS.</h1>
+        <h1>Get in Touch</h1>
+        <p>Have questions or need help? Reach out to us, and we'll get back to you as soon as possible.</p>
+    </div>
+</section>
 
-        <div class="news-container">
-            <!-- News 1 -->
-            <div class="news-item">
-                <img src="imgs/news-1.jpg" alt="New York Grandmother Tricks Scammer">
-                <h2>NEW YORK GRANDMOTHER TRICKS WOULD-BE SCAMMER</h2>
-                <p>A Long Island, New York grandmother successfully tricked a scammer attempting to defraud her out of thousands of dollars. 
-                   Jean Ebbert, a 73-year-old former 911 dispatcher, received a suspicious call from a man claiming to be her grandson in jail, requesting 
-                   $8,000 for bail. Recognizing the scam, she played along, alerting authorities who later caught the suspect at her home. 
-                   Security experts say this serves as a reminder to always verify suspicious calls before taking action.</p>
+<!-- Contact Form Section -->
+<!-- Contact Form Section -->
+<section class="contact-form">
+    <div class="container">
+        <h2 data-aos="fade-right" data-aos-duration="1200">Send Us a Message</h2>
+        <form data-aos="zoom-in" data-aos-duration="1200">
+            <div class="form-group">
+                <label for="name">* Full Name</label>
+                <input type="text" id="name" required>
             </div>
-
-            <!-- News 2 -->
-            <div class="news-item">
-                <img src="imgs/news-2.jpg" alt="Top Security Tips for Your Home">
-                <h2>TOP SECURITY TIPS TO KEEP YOUR HOME SAFE</h2>
-                <p>Home security experts emphasize the importance of preventive measures to keep properties safe. Key tips include installing motion-activated lights, 
-                   reinforcing door locks, and using a monitored security system. Additionally, maintaining good relationships with neighbors and keeping a well-lit exterior 
-                   can deter potential intruders. Homeowners are advised to regularly test security systems and update passwords for smart home devices.
-                    You know what is going on it is all about having safety.</p>
+            <div class="form-group">
+                <label for="email">* Email Address</label>
+                <input type="email" id="email" required>
             </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-duration="1200">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
 
-            <!-- News 3 -->
-            <div class="news-item">
-                <img src="imgs/news-3.jpg" alt="Attempted Break-In Foiled">
-                <h2>ATTEMPTED BREAK-IN FOILED BY HOME SECURITY CAMERAS</h2>
-                <p>A security camera system in Peachland, B.C., helped prevent a potential burglary when homeowners were alerted to an unknown individual lurking around their property. 
-                   The motion-activated cameras sent real-time notifications to their phones, allowing them to contact law enforcement before the intruder could gain entry. 
-                   Experts stress the importance of investing in a reliable security camera system with remote monitoring capabilities.</p>
+<!-- Company Info Section -->
+<section class="company-infos">
+    <div class="container">
+        <div class="info-wrapper">
+            <div class="info-box" data-aos="fade-up" data-aos-duration="1500">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our Location</h3>
+                <p>1125 Middle Street #201, Middletown, CT 06457</p>
+            </div>
+            <div class="info-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>1-860-980-SAFE (7233)</p>
+            </div>
+            <div class="info-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>info@safehomesecurityinc.com</p>
             </div>
         </div>
     </div>
 </section>
 
+
+<!-- Google Map Section -->
+<section class="contact-map" data-aos="fade-up" data-aos-duration="1200">
+    <div class="container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456789!2d-72.6504567!3d41.5622931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6543210abcdef%3A0xfedcba9876543210!2sSafe+Home+Security!5e0!3m2!1sen!2sus!4v1610000000000"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
 
 
     <!-- Footer -->

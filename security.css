@@ -295,3 +295,9 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .security-header{
+        flex-direction: column;
+    }
+}

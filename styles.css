@@ -88,15 +88,16 @@ nav ul li a:hover {
 
 /* Active Link */
 nav ul li a.active {
-    color: #ff6600;
+    color: #ffcc00;
+    transform: scale(1.1);
     font-weight: bold;
 }
 
-/* Hover Effect on Active Link */
+/* Hover Effect on Active Link /
 nav ul li a.active:hover {
     color: #ffaa33;
     transform: scale(1.1);
-}
+}*/
 
 /* Navbar Hover Glow Effect */
 nav:hover {
@@ -566,6 +567,9 @@ footer .company-info p {
 
     .hero-content h1 {
         font-size: 28px;
+    }
+    .hero-buttons a{
+        margin-bottom: 5px;
     }
 
     .features .container {
