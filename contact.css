@@ -200,8 +200,9 @@
     background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
     border-radius: 50%;
     background-size: 610px;
-    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
-    animation-name: rotate;
+    box-shadow: inset 10px 5px 100px 40px rgba(46, 44, 44, 0.9),
+    inset -8px 0 15px 6px rgba(66, 63, 63, 0);
+animation-name: rotate;
     animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
